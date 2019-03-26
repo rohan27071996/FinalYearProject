@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="Script/registration.js"></script>
+<link rel="stylesheet" type="text/css" href="Styles/registration.css">
+<title>Registration</title>
+</head>
+<body>
+	<div class="main">
+		<section class="signup">	
+			<div class="container">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="signup-content">
+					<form method="POST" id="signup-form" class="signup-form">
+						<h2 class="form-title">Create Account</h2>
+						<div class="form-group">
+							<input type="text" class="form-control input-lg" name="" id="firstName"
+								placeholder="First Name" required />
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control input-lg" name="" id="lastName"
+								placeholder="Last Name" required />
+						</div>
+						<div class="form-group">
+							<input type="number" class="form-control input-lg" name="" id="age" min="13" max="100"
+								placeholder="Age" required />
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" id="gender"><span id="genderText">Gender</span></button>
+  								<div id="demo" class="collapse">
+  									<div class="radio">
+  										<label><input type="radio" name="xyz" checked>Male</label>
+									</div>
+									<div class="radio">
+  										<label><input type="radio" name="xyz">Female</label>
+									</div>
+  								</div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control input-lg" name="" id="contactNumber"
+								placeholder="Contact Number" required/>
+						</div>
+						<div class="form-group">
+							 <input type="email" name="" placeholder="Email" required class="form-control input-lg" placeholder="Email" required/>
+						</div>
+						<div class="form-group">
+							<input id="password" type="text" class="form-control input-lg" name="" placeholder="Password" required>
+              					<span id="eye" toggle="#password" class="fa fa-fw fa-eye fa-lg field-icon toggle-password"></span>
+              					<div class="pwstrength_viewport_progress"></div>
+						</div>
+						<div class="form-group">
+                            <input type="checkbox" name="" id="agree-term" class="agree-term" required>
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                        </div>
+						<div class="form-group">
+							
+						</div>
+						<input type="submit" class="form-input" name="" id="submit"
+								value="Sign Up" />
+					</form>
+					<p class="loginHere">
+                        Have already an account ? <a href="#" class="loginhere-link">Login here</a>
+                    </p>
+				</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
