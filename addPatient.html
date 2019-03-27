@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="Script/registration.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/addPatient.css">
+  <title>ADD PATIENT</title>
+</head>
+
+<body>
+  <div class="main">
+    <section class="signup">
+      <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="signup-content">
+            <form method="POST" id="signup-form" class="signup-form">
+              <h2 class="form-title">ADD PATIENT</h2>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" name="" id="firstName" placeholder="First Name" required />
+              </div>
+              
+              
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" name="" id="lastName" placeholder="Last Name" required />  
+              </div>
+              
+              
+              <div class="form-group">
+                <input type="number" class="form-control input-lg" name="" id="age" min="13" max="100" placeholder="Age" required />
+              </div>
+
+              <div class="form-group">
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" id="gender"><span id="genderText">Gender</span></button>
+                <div id="demo" class="collapse">
+                  <div class="radio">
+                    <label><input type="radio" name="xyz" checked>Male</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="xyz">Female</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+       
+                
+                
+                    <div class="row">
+        <div class='col-sm-3'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'  >
+                    <input type="date" name="dateofbirth" id="dateofbirth">
+                </div>
+            </div>
+        </div>
+    </div>
+  
+         
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" name="" id="contactNumber" placeholder="Contact Number" required/>
+              </div>
+              
+              
+              
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" name="" id="altContactNumber" placeholder="Alternate Contact Number" required/>
+              </div>
+              
+              
+              <div class="form-group">
+                <input type="email" name="" placeholder="Email" required class="form-control input-lg" placeholder="Email" required/>
+              </div>
+              
+                  
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" name="" id="addressLine1" placeholder="Address Line 1" required />  
+              </div>
+              
+               <div class="form-group">
+                <input type="text" class="form-control input-lg" name="" id="addressLine2" placeholder="Address Line 2"  />  
+              </div>
+              
+                   
+                  <div class="form-group">
+                <input type="number" class="form-control input-lg" name="" id="zipCode" placeholder="Zip Code"  />  
+              </div>
+              
+              
+                  <div class="form-group">
+                <input type="text" class="form-control input-lg" name="" id="state" placeholder="State"  />  
+              </div>
+              
+                   <div class="form-group">
+                <input type="text" class="form-control input-lg" name="" id="city" placeholder="City"  />  
+              </div>
+              
+              
+              
+              
+         
+              
+                         <input type="submit" class="form-input" name="" id="submit" value="Add" />
+            </form>
+        
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
+
+
